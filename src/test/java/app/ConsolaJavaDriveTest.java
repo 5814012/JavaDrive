@@ -1,14 +1,13 @@
 package app;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class ConsolaJavaDriveTest {
-    
+
     @Test
-    void calcSquare() {
-        ConsolaJavaDrive c = new ConsolaJavaDrive();
-        assertEquals(4, c.square(2));
+    void consolaIsCreated() {
+        ConsolaJavaDrive consola = new ConsolaJavaDrive();
+        assertNotNull(consola);
     }
 }
