@@ -1,4 +1,4 @@
-package dev.d4nilpzz;
+package model;
 
 public class Cliente {
     private String dni;
@@ -20,6 +20,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente [DNI: " + dni + ", Nombre: " + nombre + ", Teléfono: " + telefono + "]";
+        return "model.Cliente [DNI: " + dni + ", Nombre: " + nombre + ", Teléfono: " + telefono + "]";
     }
 }

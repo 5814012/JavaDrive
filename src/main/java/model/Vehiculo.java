@@ -1,4 +1,4 @@
-package dev.d4nilpzz;
+package model;
 
 public abstract class Vehiculo {
     private String matricula;

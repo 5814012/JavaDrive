@@ -1,4 +1,4 @@
-package dev.d4nilpzz;
+package model;
 
 public enum Tipo {
     PEQUEÑO,

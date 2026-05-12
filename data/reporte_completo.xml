@@ -5,47 +5,47 @@
     <ubicacion>Sede Central del PSOE</ubicacion>
   </empresa>
   <flota>
-    <vehiculo tipo="Coche">
+    <vehiculo tipo="model.Coche">
       <matricula>1234ABC</matricula>
       <marca>Seat</marca>
       <modelo>Leon</modelo>
       <disponible>true</disponible>
-      <especifico>Coche FAMILIAR, Plazas: 5</especifico>
+      <especifico>model.Coche FAMILIAR, Plazas: 5</especifico>
     </vehiculo>
-    <vehiculo tipo="Coche">
+    <vehiculo tipo="model.Coche">
       <matricula>5678DEF</matricula>
       <marca>Fiat</marca>
       <modelo>500</modelo>
       <disponible>true</disponible>
-      <especifico>Coche PEQUEÑO, Plazas: 4</especifico>
+      <especifico>model.Coche PEQUEÑO, Plazas: 4</especifico>
     </vehiculo>
-    <vehiculo tipo="Coche">
+    <vehiculo tipo="model.Coche">
       <matricula>9012GHI</matricula>
       <marca>Porsche</marca>
       <modelo>911</modelo>
       <disponible>false</disponible>
-      <especifico>Coche DEPORTIVO, Plazas: 2</especifico>
+      <especifico>model.Coche DEPORTIVO, Plazas: 2</especifico>
     </vehiculo>
-    <vehiculo tipo="Furgoneta">
+    <vehiculo tipo="model.Furgoneta">
       <matricula>1122JKL</matricula>
       <marca>Ford</marca>
       <modelo>Transit</modelo>
       <disponible>true</disponible>
-      <especifico>Furgoneta de Carga (1200 kg)</especifico>
+      <especifico>model.Furgoneta de Carga (1200 kg)</especifico>
     </vehiculo>
-    <vehiculo tipo="Furgoneta">
+    <vehiculo tipo="model.Furgoneta">
       <matricula>3344MNO</matricula>
       <marca>Volkswagen</marca>
       <modelo>Multivan</modelo>
       <disponible>true</disponible>
-      <especifico>Furgoneta de Pasajeros (7 personas)</especifico>
+      <especifico>model.Furgoneta de Pasajeros (7 personas)</especifico>
     </vehiculo>
-    <vehiculo tipo="Furgoneta">
+    <vehiculo tipo="model.Furgoneta">
       <matricula>5566PQR</matricula>
       <marca>Mercedes</marca>
       <modelo>Sprinter</modelo>
       <disponible>false</disponible>
-      <especifico>Furgoneta de Carga (3500 kg)</especifico>
+      <especifico>model.Furgoneta de Carga (3500 kg)</especifico>
     </vehiculo>
   </flota>
   <clientes>

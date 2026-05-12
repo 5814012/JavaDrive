@@ -1,4 +1,4 @@
-package dev.d4nilpzz;
+package model;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

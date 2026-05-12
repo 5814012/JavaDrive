@@ -1,4 +1,4 @@
-package dev.d4nilpzz;
+package model;
 
 public class Furgoneta extends Vehiculo {
     private boolean esDeCarga;
@@ -18,9 +18,9 @@ public class Furgoneta extends Vehiculo {
     @Override
     public String obtenerDetalles() {
         if (esDeCarga) {
-            return "Furgoneta de Carga (" + capacidad + " kg)";
+            return "model.Furgoneta de Carga (" + capacidad + " kg)";
         } else {
-            return "Furgoneta de Pasajeros (" + capacidad + " personas)";
+            return "model.Furgoneta de Pasajeros (" + capacidad + " personas)";
         }
     }
 }

@@ -26,7 +26,7 @@
 
         <table class="w-full border-collapse mb-8 bg-white">
           <tr>
-            <th class="bg-blue-900 text-white p-2 text-left">Tipo</th>
+            <th class="bg-blue-900 text-white p-2 text-left">model.Tipo</th>
             <th class="bg-blue-900 text-white p-2 text-left">Matricula</th>
             <th class="bg-blue-900 text-white p-2 text-left">Marca y Modelo</th>
             <th class="bg-blue-900 text-white p-2 text-left">Especificaciones</th>
@@ -37,14 +37,14 @@
             <tr class="hover:bg-blue-50">
               <td>
                 <xsl:choose>
-                  <xsl:when test="@tipo='Coche'">
+                  <xsl:when test="@tipo='model.Coche'">
                     <span class="bg-blue-200 text-blue-800 px-2 py-1 rounded font-bold">
-                      Coche
+                      model.Coche
                     </span>
                   </xsl:when>
                   <xsl:otherwise>
                     <span class="bg-green-200 text-green-800 px-2 py-1 rounded font-bold">
-                      Furgoneta
+                      model.Furgoneta
                     </span>
                   </xsl:otherwise>
                 </xsl:choose>

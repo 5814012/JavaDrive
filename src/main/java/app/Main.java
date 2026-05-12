@@ -1,4 +1,4 @@
-package dev.d4nilpzz;
+package app;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -150,11 +150,11 @@ public class Main {
         System.out.print("Telefono: ");
         String telefono = sc.nextLine().trim();
         clientes.add(new Cliente(dni, nombre, telefono));
-        System.out.println("Cliente creado correctamente.");
+        System.out.println("model.Cliente creado correctamente.");
     }
 
     static void crearVehiculo() {
-        System.out.print("Tipo (COCHE/FURGONETA): ");
+        System.out.print("model.Tipo (COCHE/FURGONETA): ");
         String tipo = sc.nextLine().trim().toUpperCase();
         System.out.print("Matricula: ");
         String matricula = sc.nextLine().trim();
@@ -164,20 +164,20 @@ public class Main {
         String modelo = sc.nextLine().trim();
 
         if (tipo.equals("COCHE")) {
-            System.out.print("Tipo de coche (Pequeño/Familiar/Deportivo): ");
+            System.out.print("model.Tipo de coche (Pequeño/Familiar/Deportivo): ");
             String tipoCoche = sc.nextLine().trim();
             Tipo tipos = Tipo.valueOf(tipoCoche.toUpperCase());
             System.out.print("Numero de plazas (2-7): ");
             int plazas = Integer.parseInt(sc.nextLine().trim());
             vehiculos.add(new Coche(matricula, marca, modelo, tipos, plazas));
-            System.out.println("Coche añadido.");
+            System.out.println("model.Coche añadido.");
         } else if (tipo.equals("FURGONETA")) {
             System.out.print("Es de carga? (true/false): ");
             boolean esCarga = Boolean.parseBoolean(sc.nextLine().trim());
             System.out.print(esCarga ? "Capacidad (kg): " : "Capacidad (personas): ");
             int capacidad = Integer.parseInt(sc.nextLine().trim());
             vehiculos.add(new Furgoneta(matricula, marca, modelo, esCarga, capacidad));
-            System.out.println("Furgoneta añadida.");
+            System.out.println("model.Furgoneta añadida.");
         } else {
             System.out.println("[ERROR] Ese tipo de vehiculo no existe.");
         }
@@ -215,7 +215,7 @@ public class Main {
         contadorReservas++;
         Reserva reserva = new Reserva(contadorReservas, c, v, fInicio, fFin);
         exportarTicket(reserva);
-        System.out.println("Reserva R" + contadorReservas + " realizada.");
+        System.out.println("model.Reserva R" + contadorReservas + " realizada.");
     }
 
     static int mostrarMenu() {
@@ -244,7 +244,7 @@ public class Main {
         String dni = sc.nextLine().trim();
         Cliente cliente = buscarCliente(dni);
         if (cliente == null) {
-            System.out.println("[ERROR] Cliente no encontrado.");
+            System.out.println("[ERROR] model.Cliente no encontrado.");
             return;
         }
 
@@ -252,7 +252,7 @@ public class Main {
         String matricula = sc.nextLine().trim();
         Vehiculo vehiculo = buscarVehiculo(matricula);
         if (vehiculo == null) {
-            System.out.println("[ERROR] Vehiculo no encontrado.");
+            System.out.println("[ERROR] model.Vehiculo no encontrado.");
             return;
         }
         if (!vehiculo.isDisponible()) {
@@ -309,7 +309,7 @@ public class Main {
 
             for (Vehiculo v : vehiculos) {
                 Element vehiculo = doc.createElement("vehiculo");
-                vehiculo.setAttribute("tipo", (v instanceof Coche) ? "Coche" : "Furgoneta");
+                vehiculo.setAttribute("tipo", (v instanceof Coche) ? "model.Coche" : "model.Furgoneta");
 
                 Element matricula = doc.createElement("matricula");
                 matricula.setTextContent(v.getMatricula());

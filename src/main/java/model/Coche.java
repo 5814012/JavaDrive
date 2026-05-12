@@ -1,4 +1,4 @@
-package dev.d4nilpzz;
+package model;
 
 public class Coche extends Vehiculo {
     private Tipo tipo;
@@ -17,6 +17,6 @@ public class Coche extends Vehiculo {
 
     @Override
     public String obtenerDetalles() {
-        return "Coche " + tipo + ", Plazas: " + numPlazas;
+        return "model.Coche " + tipo + ", Plazas: " + numPlazas;
     }
 }
